@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+   Meus Carros
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <p>Meus Carros</p>
+ <ion-list>
+    <ion-item *ngFor="let c of carros">
+      <p>Nome: {{c.nome}}</p>
+      <p>Preco: R$ {{c.preco}}</p>
+      <p>Ano: {{c.ano}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>>
